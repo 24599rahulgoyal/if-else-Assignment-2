@@ -1,0 +1,19 @@
+import java.util.Scanner;
+class Alphabet{
+ public static void main(String[] args){
+  Scanner sc = new Scanner(System.in);
+  System.out.println("please Enter Character : ");
+  char alpha = sc.next().charAt(0);
+  
+  if(alpha >= 65 && alpha <= 90){
+	System.out.println("Uppercase Letter");
+}
+  else if(alpha >= 97 && alpha <= 122){
+	System.out.println("Lowercase Letter");
+}
+  else{
+	System.out.println("Invalid Character");
+}
+
+}
+}
