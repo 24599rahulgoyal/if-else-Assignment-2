@@ -1,0 +1,35 @@
+import java.util.Scanner;
+class Age{
+ public static void main(String[] args){
+  Scanner sc = new Scanner(System.in);
+  System.out.println("Please Enter the Ages of person a : ");
+  double a = sc.nextDouble();
+  System.out.println("Please Enter the Ages of person b : ");
+  double b = sc.nextDouble();
+  System.out.println("Please Enter the Ages of person c : ");
+  double c = sc.nextDouble(); 
+
+  if(a>b && a>c){
+	System.out.println("The oldest person is a");
+}
+  else if(b>c && b > a){
+	System.out.println("The oldest person is b");
+}
+  else{
+	System.out.println("The oldest person is c");
+} 
+
+
+//////////////////////////////////////////////////////////////
+
+  if(b>a && c > a){
+	System.out.println("The Youngest person is a");
+}
+  else if(b>c && a > c){
+	System.out.println("The Youngest person is c");
+}
+  else{
+	System.out.println("The Youngest person is b");
+}
+}
+}
