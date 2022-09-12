@@ -1,0 +1,21 @@
+import java.util.Scanner;
+class Exam{
+ public static void main(String[] args){
+  Scanner sc = new Scanner(System.in);
+  System.out.println("Please Enter the Number of classes Held : ");
+  int c = sc.nextInt();
+  System.out.println("Please Enter the Number of classes Attended : ");
+  int a = sc.nextInt();
+
+  int p = (a*100)/c;
+  System.out.println("the Percentage of class Attended by you is : " + p);
+
+  if(p>=75){
+	System.out.println("You are allowed to sit in the Examination");
+}
+  else{
+	System.out.println("You are not allowed to sit in the Examination as your attendence percentage is below 75%");
+}
+
+}
+}
