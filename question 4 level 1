@@ -1,0 +1,19 @@
+import java.util.Scanner;
+class Company{
+ public static void main(String[] args){
+  Scanner sc = new Scanner(System.in);
+  System.out.println("Enter your Salary : ");
+  double s = sc.nextDouble();
+
+  System.out.println("Enter your year(s) of service(s) : ");
+  double y = sc.nextDouble();
+
+  if(y>5){
+	double b = s + (s*5)/100;
+	double f = (s*5)/100; 
+	System.out.println("Congratulations! you received "+ b +" rupee with bonus " + f);
+}
+  
+}
+
+}
